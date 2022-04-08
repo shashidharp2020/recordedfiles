@@ -45,7 +45,7 @@
 						"login"
 					]
 				},
-				"description": "After a successful login a token is returned. This is a Bearer token. To authenticate with it use the Authorization header and set value to Bearer empty space and the token value."
+				"description": "After a ---- successful login a token is returned. This is a Bearer token. To authenticate with it use the Authorization header and set value to Bearer empty space and the token value."
 			},
 			"response": [
 				{

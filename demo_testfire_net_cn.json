@@ -1,0 +1,321 @@
+{
+    "id": "985e328e-d76c-46a0-b265-67e51f4627f5",
+    "name": "AltoroJ REST API",
+    "order": [],
+    "folders": [
+        {
+            "id": "2818a899-8fa1-4c25-adeb-4b9e702d03ef",
+            "name": "login",
+            "description": "Folder for login",
+            "order": [
+                "cbcb5638-c885-4211-a671-114ccbcbf8cf",
+                "fc6ebc64-98ca-4b51-8780-7f7835abe168"
+            ],
+            "collection_name": "AltoroJ REST API",
+            "collection_id": "985e328e-d76c-46a0-b265-67e51f4627f5",
+            "collection": "985e328e-d76c-46a0-b265-67e51f4627f5"
+        },
+        {
+            "id": "d84f9058-5a5a-40a7-8b61-88f7d0cabda4",
+            "name": "account",
+            "description": "Folder for account",
+            "order": [
+                "166a1ed3-0717-405f-89f8-6a5654fa745a",
+                "d55f9e27-0c8d-4ee6-899e-da03dd27f7a5",
+                "d44b0b0d-fef2-4007-994e-1925ec512c9d",
+                "fe63a4a7-c5c3-45db-ae5c-69bcf6488871"
+            ],
+            "collection_name": "AltoroJ REST API",
+            "collection_id": "985e328e-d76c-46a0-b265-67e51f4627f5",
+            "collection": "985e328e-d76c-46a0-b265-67e51f4627f5"
+        },
+        {
+            "id": "89ec9b9e-ef05-4e9b-a0ee-311164ffed66",
+            "name": "transfer",
+            "description": "Folder for transfer",
+            "order": [
+                "33c31026-c5b1-46c6-8010-149ec38e0d9e"
+            ],
+            "collection_name": "AltoroJ REST API",
+            "collection_id": "985e328e-d76c-46a0-b265-67e51f4627f5",
+            "collection": "985e328e-d76c-46a0-b265-67e51f4627f5"
+        },
+        {
+            "id": "abcdcff3-8952-4db3-bc83-d144fad07c82",
+            "name": "feedback",
+            "description": "Folder for feedback",
+            "order": [
+                "5b3889c0-bcf2-4586-bffa-cd5bd54a3f68",
+                "27fce47a-7942-4a2b-91f9-df87993268bc"
+            ],
+            "collection_name": "AltoroJ REST API",
+            "collection_id": "985e328e-d76c-46a0-b265-67e51f4627f5",
+            "collection": "985e328e-d76c-46a0-b265-67e51f4627f5"
+        },
+        {
+            "id": "69a7c438-7fd1-4dde-b04c-2dbe3537947c",
+            "name": "admin",
+            "description": "Folder for admin",
+            "order": [
+                "a7e10a5a-666b-4d2d-901c-5b253e485cc9",
+                "71db17eb-d0d1-4cf2-9007-b79d28038720"
+            ],
+            "collection_name": "AltoroJ REST API",
+            "collection_id": "985e328e-d76c-46a0-b265-67e51f4627f5",
+            "collection": "985e328e-d76c-46a0-b265-67e51f4627f5"
+        },
+        {
+            "id": "47747a01-4538-4ff4-9c10-e8823ef085c7",
+            "name": "logout",
+            "description": "Folder for logout",
+            "order": [
+                "5f84e118-93d9-412b-bf88-33668e890414"
+            ],
+            "collection_name": "AltoroJ REST API",
+            "collection_id": "985e328e-d76c-46a0-b265-67e51f4627f5",
+            "collection": "985e328e-d76c-46a0-b265-67e51f4627f5"
+        }
+    ],
+    "timestamp": 1413302258635,
+    "synced": false,
+    "requests": [
+        {
+            "id": "cbcb5638-c885-4211-a671-114ccbcbf8cf",
+            "headers": "Accept: application/json\nAuthorization: {{Authorization}}\n",
+            "url": "{{scheme}}://{{host}}/api/login",
+            "pathVariables": {},
+            "preRequestScript": "",
+            "method": "GET",
+            "data": [],
+            "rawModeData": null,
+            "dataMode": "params",
+            "description": "If a user is loggedin the username will be returned",
+            "descriptionFormat": "html",
+            "time": 1666800940778,
+            "version": 2,
+            "responses": [],
+            "tests": "",
+            "collectionId": "985e328e-d76c-46a0-b265-67e51f4627f5",
+            "synced": false,
+            "name": "Check if any user is logged in"
+        },
+        {
+            "id": "fc6ebc64-98ca-4b51-8780-7f7835abe168",
+            "headers": "Accept: application/json\nContent-Type: application/json\n",
+            "url": "{{scheme}}://{{host}}/api/login",
+            "pathVariables": {},
+            "preRequestScript": "",
+            "method": "POST",
+            "data": [],
+            "rawModeData": "{\n    \"username\": \"jsmith\",\n    \"password\": \"demo1234\"\n}",
+            "dataMode": "raw",
+            "description": "After a successful login a token is returned. This is a Bearer token. To authenticate with it use the Authorization header and set value to Bearer empty space and the token value.",
+            "descriptionFormat": "html",
+            "time": 1666800940778,
+            "version": 2,
+            "responses": [],
+            "tests": "",
+            "collectionId": "985e328e-d76c-46a0-b265-67e51f4627f5",
+            "synced": false,
+            "name": "Login method"
+        },
+        {
+            "id": "166a1ed3-0717-405f-89f8-6a5654fa745a",
+            "headers": "Accept: application/json\nAuthorization: {{Authorization}}\n",
+            "url": "{{scheme}}://{{host}}/api/account",
+            "pathVariables": {},
+            "preRequestScript": "",
+            "method": "GET",
+            "data": [],
+            "rawModeData": null,
+            "dataMode": "params",
+            "description": "Returns a list of all the accounts owned by the user",
+            "descriptionFormat": "html",
+            "time": 1666800940778,
+            "version": 2,
+            "responses": [],
+            "tests": "",
+            "collectionId": "985e328e-d76c-46a0-b265-67e51f4627f5",
+            "synced": false
+        },
+        {
+            "id": "d55f9e27-0c8d-4ee6-899e-da03dd27f7a5",
+            "headers": "Accept: application/json\nAuthorization: {{Authorization}}\n",
+            "url": "{{scheme}}://{{host}}/api/account/:accountNo",
+            "pathVariables": {
+                "accountNo": "{{accountNo}}"
+            },
+            "preRequestScript": "",
+            "method": "GET",
+            "data": [],
+            "rawModeData": null,
+            "dataMode": "params",
+            "description": "Returns details about a specific account",
+            "descriptionFormat": "html",
+            "time": 1666800940778,
+            "version": 2,
+            "responses": [],
+            "tests": "",
+            "collectionId": "985e328e-d76c-46a0-b265-67e51f4627f5",
+            "synced": false
+        },
+        {
+            "id": "d44b0b0d-fef2-4007-994e-1925ec512c9d",
+            "headers": "Accept: application/json\nAuthorization: {{Authorization}}\n",
+            "url": "{{scheme}}://{{host}}/api/account/:accountNo/transactions",
+            "pathVariables": {
+                "accountNo": "{{accountNo}}"
+            },
+            "preRequestScript": "",
+            "method": "GET",
+            "data": [],
+            "rawModeData": null,
+            "dataMode": "params",
+            "description": "Returns the last 10 transactions attached to an account",
+            "descriptionFormat": "html",
+            "time": 1666800940778,
+            "version": 2,
+            "responses": [],
+            "tests": "",
+            "collectionId": "985e328e-d76c-46a0-b265-67e51f4627f5",
+            "synced": false
+        },
+        {
+            "id": "fe63a4a7-c5c3-45db-ae5c-69bcf6488871",
+            "headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: {{Authorization}}\n",
+            "url": "{{scheme}}://{{host}}/api/account/:accountNo/transactions",
+            "pathVariables": {
+                "accountNo": "{{accountNo}}"
+            },
+            "preRequestScript": "",
+            "method": "POST",
+            "data": [],
+            "rawModeData": "{\n    \"startDate\": \"2012-03-12\",\n    \"endDate\": \"2012-03-17\"\n}",
+            "dataMode": "raw",
+            "description": "Return transactions between 2 specific dates",
+            "descriptionFormat": "html",
+            "time": 1666800940779,
+            "version": 2,
+            "responses": [],
+            "tests": "",
+            "collectionId": "985e328e-d76c-46a0-b265-67e51f4627f5",
+            "synced": false
+        },
+        {
+            "id": "33c31026-c5b1-46c6-8010-149ec38e0d9e",
+            "headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: {{Authorization}}\n",
+            "url": "{{scheme}}://{{host}}/api/transfer",
+            "pathVariables": {},
+            "preRequestScript": "",
+            "method": "POST",
+            "data": [],
+            "rawModeData": "{\n    \"toAccount\": \"800002\",\n    \"fromAccount\": \"800003\",\n    \"transferAmount\": \"200\"\n}",
+            "dataMode": "raw",
+            "description": "Transfer money between two accounts",
+            "descriptionFormat": "html",
+            "time": 1666800940779,
+            "version": 2,
+            "responses": [],
+            "tests": "",
+            "collectionId": "985e328e-d76c-46a0-b265-67e51f4627f5",
+            "synced": false
+        },
+        {
+            "id": "5b3889c0-bcf2-4586-bffa-cd5bd54a3f68",
+            "headers": "Accept: application/json\nContent-Type: application/json\n",
+            "url": "{{scheme}}://{{host}}/api/feedback/submit",
+            "pathVariables": {},
+            "preRequestScript": "",
+            "method": "POST",
+            "data": [],
+            "rawModeData": "{\n    \"name\": \"J Smith\",\n    \"email\": \"jsmtih@altoromutual.com\",\n    \"subject\": \"Amazing web design\",\n    \"message\": \"I like the new look of your applicaiton\"\n}",
+            "dataMode": "raw",
+            "description": "Submit feedback for the bank",
+            "descriptionFormat": "html",
+            "time": 1666800940779,
+            "version": 2,
+            "responses": [],
+            "tests": "",
+            "collectionId": "985e328e-d76c-46a0-b265-67e51f4627f5",
+            "synced": false
+        },
+        {
+            "id": "27fce47a-7942-4a2b-91f9-df87993268bc",
+            "headers": "Accept: application/json\nAuthorization: {{Authorization}}\n",
+            "url": "{{scheme}}://{{host}}/api/feedback/:feedbackId",
+            "pathVariables": {
+                "feedbackId": "{{feedbackId}}"
+            },
+            "preRequestScript": "",
+            "method": "GET",
+            "data": [],
+            "rawModeData": null,
+            "dataMode": "params",
+            "description": "Retrieve feedback",
+            "descriptionFormat": "html",
+            "time": 1666800940779,
+            "version": 2,
+            "responses": [],
+            "tests": "",
+            "collectionId": "985e328e-d76c-46a0-b265-67e51f4627f5",
+            "synced": false
+        },
+        {
+            "id": "a7e10a5a-666b-4d2d-901c-5b253e485cc9",
+            "headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: {{Authorization}}\n",
+            "url": "{{scheme}}://{{host}}/api/admin/addUser",
+            "pathVariables": {},
+            "preRequestScript": "",
+            "method": "POST",
+            "data": [],
+            "rawModeData": "{\n    \"firstname\": \"Bilbo\",\n    \"lastname\": \"Baggins\",\n    \"username\": \"bilbob\",\n    \"password1\": \"S3l3ctS0methingStr0ng5AsP@ssword\",\n    \"password2\": \"S3l3ctS0methingStr0ng5AsP@ssword\"\n}",
+            "dataMode": "raw",
+            "description": "Add new user",
+            "descriptionFormat": "html",
+            "time": 1666800940779,
+            "version": 2,
+            "responses": [],
+            "tests": "",
+            "collectionId": "985e328e-d76c-46a0-b265-67e51f4627f5",
+            "synced": false
+        },
+        {
+            "id": "71db17eb-d0d1-4cf2-9007-b79d28038720",
+            "headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: {{Authorization}}\n",
+            "url": "{{scheme}}://{{host}}/api/admin/changePassword",
+            "pathVariables": {},
+            "preRequestScript": "",
+            "method": "POST",
+            "data": [],
+            "rawModeData": "{\n    \"username\": \"jdoe\",\n    \"password1\": \"Th1s!sz3nu3Passv0rd\",\n    \"password2\": \"Th1s!sz3nu3Passv0rd\"\n}",
+            "dataMode": "raw",
+            "description": "Change user password",
+            "descriptionFormat": "html",
+            "time": 1666800940779,
+            "version": 2,
+            "responses": [],
+            "tests": "",
+            "collectionId": "985e328e-d76c-46a0-b265-67e51f4627f5",
+            "synced": false
+        },
+        {
+            "id": "5f84e118-93d9-412b-bf88-33668e890414",
+            "headers": "Accept: application/json\n",
+            "url": "{{scheme}}://{{host}}/api/logout",
+            "pathVariables": {},
+            "preRequestScript": "",
+            "method": "GET",
+            "data": [],
+            "rawModeData": null,
+            "dataMode": "params",
+            "description": "Logout from the bank",
+            "descriptionFormat": "html",
+            "time": 1666800940779,
+            "version": 2,
+            "responses": [],
+            "tests": "",
+            "collectionId": "985e328e-d76c-46a0-b265-67e51f4627f5",
+            "synced": false
+        }
+    ]
+}

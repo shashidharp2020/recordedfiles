@@ -1,0 +1,13 @@
+{
+  "TARGET": "https://demo.testfire.net",
+  "APPLICATION_NAME": "UOB111",
+  "JOB_NAME": "UOB111",
+  "APPSCAN_CREDENTIALS_NAME": "88.9",
+  "APPSCAN_FOLDER_PATH": "ASE/Automation",
+  "APPSCAN_TEMPLATE_NAME": "Test001",
+  "APPSCAN_TEST_OPTIMIZATION": "1",
+  "APPSCAN_TEST_POLICY": "3",
+  "APPSCAN_SCAN_TYPE": "1",
+  "TRAFFIC_FILE_PATH": "Traffic.dast.config",
+  "LOGIN_FILE_PATH": "Login.dast.config"
+}
